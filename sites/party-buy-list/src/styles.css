@@ -3,3 +3,20 @@
 @media(max-width:420px){.mast>p{display:none}.intro{padding-top:38px}.intro h1{font-size:43px}.choices,.choices.compact,.extras{grid-template-columns:1fr}.number-pair{display:grid}.actions{grid-template-columns:1fr}.actions button{border-right:0}.row-top{display:grid;gap:3px}.row-top strong{text-align:left}.guide{margin-left:10px;margin-right:10px}.guide>div{grid-template-columns:1fr}.guide article{border-right:0}.policy{padding:18px}}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media print{body{background:#fff;font-size:10pt}.mast,.guide,footer,.actions,.add,.responsible,.link-button,.status{display:none!important}main,#result{display:block!important;max-width:none;margin:0;border:0;box-shadow:none}.receipt-head{padding:0 0 15px;background:none}.receipt-head h1{font-size:38pt}.list-section{padding:12px 0;break-inside:avoid}.buy-row{min-height:28px;padding:5px 0}.row-main small{display:none}.buy-row>input{appearance:none;border:1px solid #000;width:15px;height:15px}.buy-row>input:checked::after{content:'✓';font-size:13px}.list-section h2{font-size:14pt}}
+
+/* Quiet cross-site discovery; colors come from this site's palette. */
+.more-odd-sites{background:var(--odd-bg);color:var(--odd-ink);border-top:1px solid var(--odd-line);padding:clamp(36px,5vw,64px) clamp(18px,4vw,64px);font-family:inherit;line-height:1.4}
+.more-odd-sites *{box-sizing:border-box}
+.more-odd-sites__inner{max-width:1180px;margin:auto}
+.more-odd-sites__eyebrow{margin:0 0 9px;font:700 11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--odd-accent)}
+.more-odd-sites h2{margin:0;font:inherit;font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-.025em;line-height:1.15}
+.more-odd-sites__intro{margin:8px 0 24px;font-size:14px;opacity:.82}
+.more-odd-sites__links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px)}
+.more-odd-sites__links a{display:flex;flex-direction:column;gap:8px;min-width:0;padding:17px 0 14px;border-top:1px solid var(--odd-line);color:inherit;text-decoration:none}
+.more-odd-sites__links a:hover,.more-odd-sites__links a:focus-visible{border-color:var(--odd-accent);color:var(--odd-accent)}
+.more-odd-sites__links a:focus-visible,.more-odd-sites__all:focus-visible{outline:2px solid var(--odd-accent);outline-offset:4px}
+.more-odd-sites__links strong{font-size:clamp(15px,1.7vw,19px);line-height:1.25}
+.more-odd-sites__links span{font-size:12px;opacity:.75}
+.more-odd-sites__all{display:inline-block;margin-top:22px;color:var(--odd-accent);font-size:13px;font-weight:700;text-underline-offset:.25em}
+@media(max-width:620px){.more-odd-sites__links{grid-template-columns:1fr;gap:0}.more-odd-sites__links a{padding:13px 0}.more-odd-sites__links a span{font-size:11px}.more-odd-sites__all{margin-top:16px}}
+@media print{.more-odd-sites{display:none!important}}
